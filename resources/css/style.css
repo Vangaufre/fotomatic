@@ -332,9 +332,6 @@ header .mobile {
     color: #4a4a4a;
     text-align: center;
   }
-  .feature .image-container {
-
-  }
 }
 
 /* Filters Section */
@@ -391,16 +388,24 @@ header .mobile {
   }
 
   #filters-section .images-container {
-    max-width: 100%;
-    padding: 0 3%;
-    display: flex;
-    flex-direction: row;
-    border: 4px solid red;
+      max-width: 100%;
+      padding: 0 3%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+  .image-container {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
-  #filters-section .images-container img {
-    border: 3px solid yellow;
+  .image-container img {
     display: flex;
-    max-width: 100%;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
 }
 
